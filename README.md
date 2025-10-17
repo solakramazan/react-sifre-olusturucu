@@ -1,16 +1,21 @@
-# React + Vite
+React ile Güvenli Şifre Oluşturucu
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Selamlar! Bu proje, React ile pratik yaparken hem kendim için kullanışlı bir araç oluşturmak hem de biraz UI/UX yeteneklerimi konuşturmak için yaptığım bir çalışma. Malum, her site için farklı ve güçlü şifreler gerekiyor, ben de bu işi biraz daha keyifli hale getirmek istedim.
 
-Currently, two official plugins are available:
+[Uygulamanın son halinin ekran görüntüsü]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Projeyi Yaparken Neler Düşündüm?
 
-## React Compiler
+Sadece çalışan bir şifre üreticisi yapmak yerine, kullanırken "vay be, güzelmiş" dedirtecek birkaç detaya odaklandım:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Akıcı Deneyim: O kaydırıcıyı (slider) hareket ettirdiğinde uzunluğun anında değişmesi, kutucukları işaretlediğinde güç barının anlık tepki vermesi gibi küçük şeyler, uygulamayı daha canlı hissettiriyor bence.
 
-## Expanding the ESLint configuration
+Tatmin Edici Geri Bildirim: "Kopyala" butonuna basınca çıkan o küçük "Kopyalandı!" mesajı veya "Oluştur" butonuna basınca şifrenin anında değişmesi gibi detaylar, kullanıcıya yaptığı işlemin başarılı olduğunu hemen hissettiriyor.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Modern Tasarım: Açıkçası sıkıcı, beyaz arayüzlerden sıkılmıştım. Bu yüzden hem göz yormayan hem de o "retro-hacker" hissini veren modern bir koyu tema tasarladım. Renk paletini de buna göre seçtim.
+
+Kullanılan Teknolojiler
+
+Frontend: React (Vite ile oluşturdum)
+
+Stil: Özellikle arayüzü istediğim gibi şekillendirebilmek için saf CSS kullandım. Font olarak da Google'ın Poppins fontunu tercih ettim.
