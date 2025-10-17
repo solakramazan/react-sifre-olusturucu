@@ -2,7 +2,6 @@ React ile Güvenli Şifre Oluşturucu
 
 Selamlar! Bu proje, React ile pratik yaparken hem kendim için kullanışlı bir araç oluşturmak hem de biraz UI/UX yeteneklerimi konuşturmak için yaptığım bir çalışma. Malum, her site için farklı ve güçlü şifreler gerekiyor, ben de bu işi biraz daha keyifli hale getirmek istedim.
 
-[Uygulamanın son halinin ekran görüntüsü]
 
 Projeyi Yaparken Neler Düşündüm?
 
