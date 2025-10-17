@@ -1,0 +1,212 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212; /* Yeni Koyu Arka Plan */
+  color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app-container {
+  background-color: #1e1e1e; /* Yeni Konteyner Rengi */
+  padding: 30px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  border: 1px solid #333;
+}
+
+.main-title {
+  text-align: center;
+  color: #888;
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+/* Şifre Görüntüleme Alanı */
+.password-display-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #121212;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  position: relative; /* Kopyalama mesajı için önemli */
+}
+
+.password-display {
+  flex-grow: 1;
+  background: none;
+  border: none;
+  color: #fafafa;
+  font-size: 1.5rem;
+  font-weight: 600;
+  outline: none;
+}
+
+.password-display::placeholder {
+  color: #666;
+}
+
+.copy-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.copy-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #f92672; /* Yeni Vurgu Rengi (Neon Pembe) */
+  font-size: 1.5rem;
+  transition: color 0.2s;
+}
+.copy-btn:hover {
+  color: #a6e22e; /* Yeni Hover Rengi (Neon Yeşil) */
+}
+
+/* Kopyalandı yazısı için yeni konumlandırma */
+.copy-message {
+  position: absolute;
+  top: -25px; /* Konteynerin üstünde */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #a6e22e;
+  color: #121212;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Ayarlar Alanı */
+.settings-container {
+  background-color: #121212;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.setting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+/* Uzunluk Ayarı */
+.length-display {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #f92672;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  background: #333;
+  border-radius: 5px;
+  outline: none;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background: #f92672;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Checkbox Ayarları */
+.option {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+.option input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #888;
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+.option input[type="checkbox"]:checked {
+  background-color: #f92672;
+  border-color: #f92672;
+}
+.option input[type="checkbox"]:checked::before {
+  content: '✓';
+  position: absolute;
+  color: #121212;
+  font-weight: bold;
+  font-size: 1rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Güç Göstergesi */
+.strength-indicator {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+  padding: 15px;
+  margin: 20px 0;
+  border-radius: 5px;
+}
+.strength-label {
+  color: #888;
+  font-weight: 500;
+}
+.strength-bars {
+  display: flex;
+  gap: 5px;
+}
+.strength-bar {
+  width: 10px;
+  height: 25px;
+  border: 2px solid #666;
+  border-radius: 3px;
+}
+.strength-bar.filled {
+  border: none;
+}
+.strength-bar.weak { background-color: #f92672; } /* Pembe */
+.strength-bar.medium { background-color: #fd971f; } /* Turuncu */
+.strength-bar.strong { background-color: #a6e22e; } /* Yeşil */
+.strength-bar.very-strong { background-color: #66d9ef; } /* Mavi */
+
+/* Oluştur Butonu */
+.generate-btn {
+  width: 100%;
+  padding: 15px;
+  background-color: #f92672;
+  color: #121212;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border: 2px solid #f92672;
+  transition: background-color 0.2s, color 0.2s;
+}
+.generate-btn:hover {
+  background-color: transparent;
+  color: #f92672;
+}
+

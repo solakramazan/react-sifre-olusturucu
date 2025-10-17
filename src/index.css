@@ -1,0 +1,9 @@
+body {
+  font-family: 'Poppins', sans-serif; /* Modern ve okunaklı bir font */
+  background-color: #1a1a2e; /* Koyu tema arka planı */
+  color: #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
